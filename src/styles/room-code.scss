@@ -5,6 +5,11 @@
   border:1px solid #835afd;
   cursor:pointer;
   display:flex;
+  transition:filter 0.2s;
+
+  &:hover{
+    filter: brightness(0.9);
+  }
 
   div{
     height:40px;
@@ -13,6 +18,9 @@
     display:flex;
     justify-content:center;
     align-items:center;
+
+    
+
   }
   span{
     display:block;
