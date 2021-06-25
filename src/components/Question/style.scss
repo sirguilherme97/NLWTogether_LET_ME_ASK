@@ -6,8 +6,6 @@
   & + .question{
     margin-top:8px;
   }
-
-  
   &.highlighted{
     background:#f4f0ff;
     border: 1px solid #835afd;
@@ -19,7 +17,6 @@
     background:#dbdcdd;
     border:none;
   }
-  
   p{
     color:#29292e;
   }
@@ -28,7 +25,6 @@
     justify-content: space-between;
     align-items: center;
     margin-top:24px;
-
     .user-info{
       display:flex;
       align-items: center;
@@ -43,7 +39,6 @@
         font-size:14px;
       }
     }
-
     >div {
       display:flex;
       gap:16px;
@@ -52,7 +47,6 @@
       border:0;
       background:transparent;
       cursor:pointer;
-
       &.like-button{
         display:flex;
         align-items: flex-end;
@@ -67,9 +61,6 @@
         }
         &:hover{
           filter:brightness(0.8);
-          // svg path{
-          //   fill:#835afd;
-          // }
         }
       }
     }
