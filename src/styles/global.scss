@@ -1,12 +1,38 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  background:#f8f8f8;
+html {
+  @media (max-width: 2560px) {
+    font: 500 2rem "Roboto", sans-serif;
+  }
+  @media (max-width: 1440px) {
+    font: 400 1rem "Roboto", sans-serif;
+  }
+  @media (max-width: 1024px) {
+    font: 400 0.9rem "Roboto", sans-serif;
+  }
+  @media (max-width: 768px) {
+    font: 400 0.9rem "Roboto", sans-serif;
+  }
+  @media (max-width: 425px) {
+    font: 400 0.9rem "Roboto", sans-serif;
+  }
+  @media (max-width: 375px) {
+    font: 400 0.9rem "Roboto", sans-serif;
+  }
+  @media (max-width: 320px) {
+    font: 400 0.9rem "Roboto", sans-serif;
+  }
+}
+body {
+  background: #f8f8f8;
   color: #29292e;
 }
-body,input,button, textarea{
-  font:400 16px 'Roboto', sans-serif;
+body,
+input,
+button,
+textarea {
+  font: 400 16px "Roboto", sans-serif;
 }
