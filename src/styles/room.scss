@@ -16,11 +16,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       > img {
         @media (max-width: 818px) {
           margin-left: -2rem;
           margin-right: 2rem;
         }
+
         @media (max-width: 320px) {
           transform: scale(0.9);
           margin-left: 0.25rem;

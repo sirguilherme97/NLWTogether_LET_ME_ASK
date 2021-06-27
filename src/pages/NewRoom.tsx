@@ -33,30 +33,55 @@ export function NewRoom() {
           <strong>Crie salas Q&amp;A ao-vivo</strong>
           <p>Tire as dúvidas da sua audiência em tempo-real</p>
         </aside>
-        <main>
-          <div className="main-content">
-            <img src={logoImg} alt="Letmeask" />
-            <img id="imgLogin" alt="avatar" src={user?.avatar} />
-            <h3 id="userLogin">{user?.name}</h3>
-            <h2>Criar uma nova sala</h2>
-            <form onSubmit={handleCreateRoom}>
-              <input
-                type="text"
-                placeholder="Nome da sala"
-                onChange={event => setNewRoom(event.target.value)}
-                value={newRoom}
-              >
-              </input>
-              <Button
-                type="submit">
-                Criar sala
-              </Button>
-            </form>
-            <p>
-              Quer entrar em uma sala existente? <Link to="/">Clique aqui</Link>
-            </p>
-          </div>
-        </main>
+        {user ? (
+          <main id="logado">
+            <div className="main-content">
+              <img src={logoImg} alt="Letmeask" />
+              <img id="imgLogin" alt="avatar" src={user?.avatar} />
+              <h3 id="userLogin">{user?.name}</h3>
+              <h2>Criar uma nova sala</h2>
+              <form onSubmit={handleCreateRoom}>
+                <input
+                  type="text"
+                  placeholder="Nome da sala"
+                  onChange={event => setNewRoom(event.target.value)}
+                  value={newRoom}
+                >
+                </input>
+                <Button
+                  type="submit">
+                  Criar sala
+                </Button>
+              </form>
+              <p>
+                Quer entrar em uma sala existente? <Link to="/">Clique aqui</Link>
+              </p>
+            </div>
+          </main>
+        ) : (
+          <main>
+            <div className="main-content">
+              <img src={logoImg} alt="Letmeask" />
+              <h2>Criar uma nova sala</h2>
+              <form onSubmit={handleCreateRoom}>
+                <input
+                  type="text"
+                  placeholder="Nome da sala"
+                  onChange={event => setNewRoom(event.target.value)}
+                  value={newRoom}
+                >
+                </input>
+                <Button
+                  type="submit">
+                  Criar sala
+                </Button>
+              </form>
+              <p>
+                Quer entrar em uma sala existente? <Link to="/">Clique aqui</Link>
+              </p>
+            </div>
+          </main>
+        )}
       </div>
     </>
   )
