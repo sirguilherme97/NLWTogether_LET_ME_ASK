@@ -1,35 +1,36 @@
-.room-code{
-  border-radius:0.5rem;
-  overflow:hidden;
-  background:#fff;
-  border:1px solid #835afd;
-  cursor:pointer;
-  display:flex;
-  transition:filter 0.2s;
-  justify-content:center;
-  &:hover{
+.room-code {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #835afd;
+  cursor: pointer;
+  display: flex;
+  transition: filter 0.2s;
+  justify-content: center;
+  &:hover {
     filter: brightness(0.9);
   }
-  div{
-     @media (max-width:320px){
-      margin-top:-0.25rem;
-      display:hidden;
-      padding:none;
-    }
-    height:40px;
-    background:#835afd;
+  div {
+    height: 50px;
+    background: #835afd;
     padding: 0 12px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  span{
-    display:block;
-    align-self:center;
-    flex:1;
+  span {
+    @media (max-width: 375px) {
+      display: none;
+    }
+    @media (max-width: 320px) {
+      display: none;
+    }
+    display: block;
+    align-self: center;
+    flex: 1;
     padding: 0 16px 0 12px;
-    width:230px;
-    font-size:14px;
-    font-weight:500;
+    width: 230px;
+    font-size: 14px;
+    font-weight: 500;
   }
 }
